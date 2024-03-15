@@ -6,8 +6,18 @@ Page({
   /**
    * 页面的初始数据
    */
-  data: {
-    
+  data: {  
+    currentIndex: 0, // 当前激活的swiper-item的索引  
+  },  
+  // 切换标签页的函数  
+  switchTab: function(e) {  
+    this.setData({  
+      currentIndex: e.currentTarget.dataset.index  
+    });  
+  },
+  // swiper的tap事件处理函数（可选，根据你的需求来决定是否需要）  
+  swiperTap: function(e) {  
+    // 这里可以处理swiper的tap事件，例如禁止默认行为等  
   },
 
   /**

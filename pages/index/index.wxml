@@ -1,35 +1,54 @@
+<view class="tab">
+  <view class="tab-item" bindtap="switchTab" data-index="0">音乐推荐</view>
+  <view class="tab-item" bindtap="switchTab" data-index="1">播放器</view>
+  <view class="tab-item" bindtap="switchTab" data-index="2">播放列表</view>
+</view>
+<view class="content">
+  <swiper-item>
+    <!-- 音乐推荐 -->
+    <include src="info.wxml" />
+  </swiper-item>
+  <swiper-item>
+    <!-- 播放器 -->
+    <include src="play.wxml" />
+  </swiper-item>
+  <swiper-item>
+    <!-- 播放列表 -->
+    <include src="playlist.wxml" />
+  </swiper-item>
+</view>
 <view class="top">
   <!-- top轮播图 -->
   <swiper indicator-dots="false" indicator-color="rgba(255, 255, 0, .6)" indicator-active-color="rgba(255, 0, 0, .6)" autoplay="false" interval="3600" duration="300" circular="false">
     <swiper-item>
-      <image src="http://xcx.lxxno.cn/image/music/lun_1.jpg" mode="widthFix" />
+      <image src="https://xcx.lxxno.cn/image/music/lun_1.jpg" mode="widthFix" />
     </swiper-item>
     <swiper-item>
-      <image src="http://xcx.lxxno.cn/image/music/lun_2.jpg" mode="widthFix" />
+      <image src="https://xcx.lxxno.cn/image/music/lun_2.jpg" mode="widthFix" />
     </swiper-item>
     <swiper-item>
-      <image src="http://xcx.lxxno.cn/image/music/lun_3.jpg" mode="widthFix" />
+      <image src="https://xcx.lxxno.cn/image/music/lun_3.jpg" mode="widthFix" />
     </swiper-item>
     <swiper-item>
-      <image src="http://xcx.lxxno.cn/image/music/lun_4.jpg" mode="widthFix" />
+      <image src="https://xcx.lxxno.cn/image/music/lun_4.jpg" mode="widthFix" />
     </swiper-item>
     <swiper-item>
-      <image src="http://xcx.lxxno.cn/image/music/lun_5.jpg" mode="widthFix" />
+      <image src="https://xcx.lxxno.cn/image/music/lun_5.jpg" mode="widthFix" />
     </swiper-item>
   </swiper>
   <!-- 中间 私人FM -->
   <view class="a">
     <view class="a1">
       <view>
-        <image src="http://xcx.lxxno.cn/image/music/04.png" mode="" />
+        <image src="https://xcx.lxxno.cn/image/music/04.png" mode="" />
         <text>私人FM</text>
       </view>
       <view>
-        <image src="http://xcx.lxxno.cn/image/music/05.png" mode="" />
+        <image src="https://xcx.lxxno.cn/image/music/05.png" mode="" />
         <text>每日歌曲推荐</text>
       </view>
       <view>
-        <image src="http://xcx.lxxno.cn/image/music/06.png" mode="" />
+        <image src="https://xcx.lxxno.cn/image/music/06.png" mode="" />
         <text>云音乐新歌榜</text>
       </view>
     </view>
@@ -39,27 +58,27 @@
     <view class="b11">推荐歌曲</view>
     <view class="b1">
       <view>
-        <image src="http://xcx.lxxno.cn/image/music/11.jpg" mode="" />
+        <image src="https://xcx.lxxno.cn/image/music/11.jpg" mode="" />
         <text>世界很安静</text>
       </view>
       <view>
-        <image src="http://xcx.lxxno.cn/image/music/22.jpg" mode="" />
+        <image src="https://xcx.lxxno.cn/image/music/22.jpg" mode="" />
         <text>影视剧歌曲</text>
       </view>
       <view>
-        <image src="http://xcx.lxxno.cn/image/music/33.jpg" mode="" />
+        <image src="https://xcx.lxxno.cn/image/music/33.jpg" mode="" />
         <text>午后慢生活</text>
       </view>
       <view>
-        <image src="http://xcx.lxxno.cn/image/music/44.jpg" mode="" />
+        <image src="https://xcx.lxxno.cn/image/music/44.jpg" mode="" />
         <text>个性歌曲</text>
       </view>
       <view>
-        <image src="http://xcx.lxxno.cn/image/music/55.jpg" mode="" />
+        <image src="https://xcx.lxxno.cn/image/music/55.jpg" mode="" />
         <text>外文欣赏</text>
       </view>
       <view>
-        <image src="http://xcx.lxxno.cn/image/music/66.jpg" mode="" />
+        <image src="https://xcx.lxxno.cn/image/music/66.jpg" mode="" />
         <text>国风歌曲</text>
       </view>
     </view>
@@ -67,27 +86,27 @@
       <view class="b11">劲曲歌曲</view>
       <view class="b1">
         <view>
-          <image src="http://xcx.lxxno.cn/image/music/m1.jpg" mode="" />
+          <image src="https://xcx.lxxno.cn/image/music/m1.jpg" mode="" />
           <text>华语精选</text>
         </view>
         <view>
-          <image src="http://xcx.lxxno.cn/image/music/m2.jpg" mode="" />
+          <image src="https://xcx.lxxno.cn/image/music/m2.jpg" mode="" />
           <text>国风新潮</text>
         </view>
         <view>
-          <image src="http://xcx.lxxno.cn/image/music/m3.jpg" mode="" />
+          <image src="https://xcx.lxxno.cn/image/music/m3.jpg" mode="" />
           <text>小众系</text>
         </view>
         <view>
-          <image src="http://xcx.lxxno.cn/image/music/m4.jpg" mode="" />
+          <image src="https://xcx.lxxno.cn/image/music/m4.jpg" mode="" />
           <text>空灵纯音</text>
         </view>
         <view>
-          <image src="http://xcx.lxxno.cn/image/music/m5.jpg" mode="" />
+          <image src="https://xcx.lxxno.cn/image/music/m5.jpg" mode="" />
           <text>民谣</text>
         </view>
         <view>
-          <image src="http://xcx.lxxno.cn/image/music/m6.jpg" mode="" />
+          <image src="https://xcx.lxxno.cn/image/music/m6.jpg" mode="" />
           <text>浪漫旋律</text>
         </view>
       </view>

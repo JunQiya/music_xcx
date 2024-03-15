@@ -1,3 +1,24 @@
+.tab{
+  height: 30px; /* 设置高度 */
+  display: flex;
+  justify-content: space-between; /* 均匀分布子元素 */  
+  align-items: center; /* 垂直居中子元素 */ 
+  background-color: #d6d6d6; /* 设置背景颜色 */  
+  padding: 8px; /* 设置内边距 */ 
+}
+.tab-item{  
+  flex: 1; /* 使其占据等量的空间 */  
+  text-align: center; /* 文本居中 */  
+  font-size: 16pt; /* 设置字体大小 */  
+  color: rgb(43, 43, 43); /* 设置字体颜色 */  
+  font-weight: bold;
+  border-bottom: 2px solid transparent; /* 设置底部透明边框，稍后用于高亮效果 */ 
+  transition: all 0.5s;
+}
+.tab-item:active,  
+.tab-item:hover {  
+  border-bottom-color: #00c3ff; /* 当点击或悬停时改变底部边框颜色 */  
+}
 .top {
   width: 100vw;
   height: 100vh;
