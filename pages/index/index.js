@@ -7,72 +7,42 @@ Page({
    * 页面的初始数据
    */
   data: {  
-    currentIndex: 0, // 当前激活的swiper-item的索引  
+    currentTab: 0, // 当前选中的标签索引  
+    swiperCurrent: 0, // swiper的当前索引  
+    musicCover: 'https://xcx.lxxno.cn/image/music/44.jpg',  
+    songName: '默认歌曲名……',  
+    singerName: '默认歌手名……',
+    isPlaying: false // 添加一个变量来跟踪播放状态
   },  
-  // 切换标签页的函数  
-  switchTab: function(e) {  
+  previousSong: function() {  
+    // 处理上一曲的逻辑  
+  },  
+  nextSong: function() {  
+    // 处理下一曲的逻辑  
+  },
+  // 播放/暂停切换函数  
+  togglePlayPause: function() {  
+    let isPlaying = this.data.isPlaying;  
+    isPlaying = !isPlaying; // 切换播放状态  
     this.setData({  
-      currentIndex: e.currentTarget.dataset.index  
+      isPlaying: isPlaying  
+    });  
+  
+    // 根据播放状态执行相应的播放或暂停逻辑  
+    if (isPlaying) {  
+      // 播放音乐逻辑  
+    } else {  
+      // 暂停音乐逻辑  
+    }  
+  },
+  playlist: function() {  
+    // 处理播放列表的逻辑  
+  },
+  switchTab: function(e) {  
+    var item = e.currentTarget.dataset.item; // 获取点击的tab-item的data-item值  
+    this.setData({  
+      currentTab: item, // 更新当前选中的标签索引  
+      swiperCurrent: item // 更新swiper的当前索引  
     });  
   },
-  // swiper的tap事件处理函数（可选，根据你的需求来决定是否需要）  
-  swiperTap: function(e) {  
-    // 这里可以处理swiper的tap事件，例如禁止默认行为等  
-  },
-
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function (options) {
-    
-  },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-    
-  },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-    
-  },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-    
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-    
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-    
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-    
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-    
-  }
 })

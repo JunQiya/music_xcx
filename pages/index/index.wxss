@@ -1,23 +1,53 @@
-.tab{
-  height: 30px; /* 设置高度 */
+page {
   display: flex;
-  justify-content: space-between; /* 均匀分布子元素 */  
-  align-items: center; /* 垂直居中子元素 */ 
-  background-color: #d6d6d6; /* 设置背景颜色 */  
-  padding: 8px; /* 设置内边距 */ 
+  flex-direction: column;
+  background-color: black;
+  color: #ffffff;
+  height: 100%;
 }
-.tab-item{  
-  flex: 1; /* 使其占据等量的空间 */  
-  text-align: center; /* 文本居中 */  
-  font-size: 16pt; /* 设置字体大小 */  
-  color: rgb(43, 43, 43); /* 设置字体颜色 */  
+
+.tab {
+  height: 30px;
+  /* 设置高度 */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /* 均匀分布子元素 */
+  align-items: center;
+  /* 垂直居中子元素 */
+  background-color: #d6d6d6;
+  /* 设置背景颜色 */
+  padding: 8px;
+  /* 设置内边距 */
+}
+
+.tab-item {
+  flex: 1;
+  /* 使其占据等量的空间 */
+  text-align: center;
+  /* 文本居中 */
+  line-height: 80rpx;
+  font-size: 16pt;
+  /* 设置字体大小 */
+  color: rgb(43, 43, 43);
+  /* 设置字体颜色 */
   font-weight: bold;
-  border-bottom: 2px solid transparent; /* 设置底部透明边框，稍后用于高亮效果 */ 
+  border-bottom: 5px solid transparent;
+  /* 设置底部透明边框transparent，稍后用于高亮效果 */
   transition: all 0.5s;
 }
-.tab-item:active,  
-.tab-item:hover {  
-  border-bottom-color: #00c3ff; /* 当点击或悬停时改变底部边框颜色 */  
+
+.tab-item:active,
+.tab-item:hover {
+  color: #00c3ff;
+  border-bottom-color: #00c3ff;
+  /* 当点击或悬停时改变底部边框颜色 */
+}
+.content{
+  width: 100vw;
+  display: flex;  
+  flex-direction: column;  
+  height: 100vh;
 }
 .top {
   width: 100vw;
@@ -94,4 +124,91 @@ image {
   /* width: 200rpx; */
   margin: 10rpx auto;
   font-size: 13pt;
+}
+
+/* 播放器区域 */
+.player-fixed {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 120rpx;
+  background-color: rgb(202, 202, 202);
+  padding: 16rpx;
+  display: flex;
+  flex-direction: row;
+  /* 改为横向排列 */
+  align-items: center;
+  /* 垂直居中 */
+  justify-content: space-between;
+  /* 水平间距 */
+  z-index: 999;
+}
+
+.player-image image {
+  width: 90rpx;
+  height: 90rpx;
+  margin-top: 8rpx;
+  margin-left: 18rpx;
+  margin-bottom: 8rpx;
+  border-radius: 10rpx;
+  border: 1rpx solid gray;
+}
+
+.player-info {
+  display: flex;
+  flex-direction: column;
+  /* 改为横向排列 */
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 3rpx;
+  margin-bottom: 6rpx;
+  margin-left: 6rpx;
+}
+
+/* 为文字添加样式 */
+.info-text {
+  color: black;
+  font-size: 26rpx;
+  margin-bottom: 6rpx;
+}
+
+/* 播放器按钮区域 */
+.player-buttons button {
+  display: inline-block;
+  width: 60rpx;
+  height: 60rpx;
+  font-size: 16rpx;
+  padding: 6rpx 10rpx;
+  /* margin-right: 6rpx; */
+  margin-left: 10rpx;
+  margin-bottom: 6rpx;
+  background-color: transparent;
+  transform: translateX(30rpx);
+}
+
+.prpreviousSong-button {
+  background-image: url(https://xcx.lxxno.cn/image/music/previousSong.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.play-pause-button {
+  background-image: url(https://xcx.lxxno.cn/image/music/pause_play.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.nextSong-button {
+  background-image: url(https://xcx.lxxno.cn/image/music/nextSong.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.playlist-button {
+  padding: 6rpx 10rpx;
+  background-color: transparent;
+  /* 移除背景色 */
+  background-image: url(https://xcx.lxxno.cn/image/music/24gf-playlistMusic5.png);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
