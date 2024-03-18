@@ -9,15 +9,15 @@
 <swiper current="{{ swiperCurrent }}" class="content" bindchange="swiperChange">
   <swiper-item>
     <!-- 音乐推荐 -->
-    <include src="./info" />
+    <include src="/pages/index/info" />
   </swiper-item>
   <swiper-item>
     <!-- 播放器 -->
-    <include src="play.wxml" />
+    <include src="/pages/index/play" />
   </swiper-item>
   <swiper-item>
     <!-- 播放列表 -->
-    <include src="playlist.wxml" />
+    <include src="/pages/index/playlist" />
   </swiper-item>
 </swiper>
 

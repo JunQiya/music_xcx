@@ -1,8 +1,9 @@
-<scroll-view class="scroll-container" scroll-y="true" scroll-top="number" 	scroll-with-animation="false" enable-back-to-top="true">
-  <view class="top">
+<scroll-view class="info-top " scroll-y="true" scroll-top="number" scroll-with-animation="true" enable-back-to-top="true">
+  <view class="info-top ">
     <!-- top轮播图 -->
     <swiper indicator-dots="false" indicator-color="rgba(255, 255, 0, .6)" indicator-active-color="rgba(255, 0, 0, .6)" autoplay="false" interval="3600" duration="300" circular="false">
       <swiper-item>
+      <!-- <video src="https://xcx.lxxno.cn/video/music/ccdudian.mp4"/> -->
         <image src="https://xcx.lxxno.cn/image/music/lun_1.jpg" mode="widthFix" />
       </swiper-item>
       <swiper-item>
@@ -40,28 +41,28 @@
       <view class="b11">推荐歌曲</view>
       <view class="b1">
         <view>
-          <image src="https://xcx.lxxno.cn/image/music/11.jpg" mode="" />
-          <text>世界很安静</text>
+          <image src="https://imgessl.kugou.com/stdmusic/20201231/20201231105006379600.jpg" mode="" />
+          <text>天外来物-薛之谦</text>
         </view>
         <view>
-          <image src="https://xcx.lxxno.cn/image/music/22.jpg" mode="" />
-          <text>影视剧歌曲</text>
+          <image src="https://xcx.lxxno.cn/image/music/20150715184807521489.jpg" mode="" />
+          <text>意外-薛之谦</text>
         </view>
         <view>
-          <image src="https://xcx.lxxno.cn/image/music/33.jpg" mode="" />
-          <text>午后慢生活</text>
+          <image src="https://xcx.lxxno.cn/image/music/20200620070059819337.jpg" mode="" />
+          <text>绅士-薛之谦</text>
         </view>
         <view>
-          <image src="https://xcx.lxxno.cn/image/music/44.jpg" mode="" />
-          <text>个性歌曲</text>
+          <image src="https://imgessl.kugou.com/stdmusic/20200620/20200620075820729146.jpg" mode="" />
+          <text>经过-陈楚生、何洁</text>
         </view>
         <view>
-          <image src="https://xcx.lxxno.cn/image/music/55.jpg" mode="" />
-          <text>外文欣赏</text>
+          <image src="https://xcx.lxxno.cn/image/music/20150718094554233878.jpg" mode="" />
+          <text>安和桥-宋冬野</text>
         </view>
         <view>
-          <image src="https://xcx.lxxno.cn/image/music/66.jpg" mode="" />
-          <text>国风歌曲</text>
+          <image src="https://xcx.lxxno.cn/image/music/20240315161120679915.jpg" mode="" />
+          <text>理想-赵雷</text>
         </view>
       </view>
       <view>

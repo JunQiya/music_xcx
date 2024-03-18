@@ -12,8 +12,8 @@ Page({
     musicCover: 'https://xcx.lxxno.cn/image/music/44.jpg',  
     songName: '默认歌曲名……',  
     singerName: '默认歌手名……',
-    isPlaying: false // 添加一个变量来跟踪播放状态
-  },  
+    isPlaying: false, // 添加一个变量来跟踪播放状态
+  },
   previousSong: function() {  
     // 处理上一曲的逻辑  
   },  
