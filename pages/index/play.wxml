@@ -1,4 +1,9 @@
 <!-- 播放器区域 -->
-<view class="container">  
+<view class="play">
+  <image src="https://imgessl.kugou.com/stdmusic/20201231/20201231105006379600.jpg" mode="" />
 
+</view>
+<view>
+  <text>天外来物</text>
+  <text>薛之谦</text>
 </view>
