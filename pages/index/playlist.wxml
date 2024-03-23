@@ -1,9 +1,11 @@
+<!-- 播放列表 -->
 <scroll-view class="scroll-container" scroll-y="true" scroll-top="number" scroll-with-animation="false" enable-back-to-top="true">
 
-
-<view>
-  <view>
-    1111
+  <view class="playlist">
+    <view class="playlist-top">
+      <image src="https://imgessl.kugou.com/stdmusic/20201231/20201231105006379600.jpg" mode="" />
+      <text class="playlist-a">天外来物</text>
+      <text class="playlist-b">薛之谦</text>
+    </view>
   </view>
-</view>
 </scroll-view>

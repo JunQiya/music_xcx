@@ -1,9 +1,15 @@
 <!-- 播放器区域 -->
+
+<!-- 专辑封面 -->
 <view class="play">
+  <!-- <image src="{{ play.poster }}" /> -->
   <image src="https://imgessl.kugou.com/stdmusic/20201231/20201231105006379600.jpg" mode="" />
 
 </view>
+<!-- 音乐信息 -->
 <view>
-  <text>天外来物</text>
-  <text>薛之谦</text>
+  <view>
+    <text> {{ play.name }} </text>
+    <view> {{ play.author }} </view>
+  </view>
 </view>

@@ -242,9 +242,9 @@ page {
 }
 
 .play image {
-  width: 80vw;
-  height: 40vh;
-  border-radius: 20vh;
+  width: 600rpx;
+  height: 600rpx;
+  border-radius: 300rpx;
   margin-top: 8vh;
   animation: rotate 20s linear infinite;
 }
@@ -257,4 +257,34 @@ page {
   100% {
     transform: rotate(360deg);
   }
+}
+
+
+/* 播放列表 */
+/* 播放列表 */
+.playlist{
+  display: flex;
+  width: 1005;
+  height: 100vh;
+  background-color: rgb(34, 34, 34);
+}
+.playlist-top{
+  display: flex;
+  margin-top: 13rpx;
+  margin-left: 20rpx;
+}
+.playlist-top image{
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 16rpx;
+}
+.playlist-a{
+  font-size: 40rpx;
+  color: #ffffff;
+  margin-left: 20rpx;
+}
+.playlist-b{
+  font-size: 30rpx;
+  color: #b6b6b6;
+  margin-left: 20rpx;
 }
