@@ -235,7 +235,9 @@ page {
 /* 播放器区域 */
 .play {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
   width: 100%;
   height: 100%;
   background-color: rgb(34, 34, 34);
@@ -245,7 +247,7 @@ page {
   width: 600rpx;
   height: 600rpx;
   border-radius: 300rpx;
-  margin-top: 8vh;
+  margin-top: 6vh;
   animation: rotate 20s linear infinite;
 }
 
@@ -258,33 +260,74 @@ page {
     transform: rotate(360deg);
   }
 }
-
+/* 音乐信息 */
+.play-a{
+  display: flex;  
+  flex-direction: column;
+  align-items: flex-start; 
+  margin-top: 30rpx;
+  margin-right: 20vh;
+}
+.play-a1 {  
+  color: #ffffff;
+  font-size: 50rpx;
+} 
+.play-a2{
+  color: rgb(201, 201, 201);
+  font-size: 40rpx;
+}
+/* 进度条 */
+.play-jindutiao {  
+  width: 30vh;  
+  height: 30rpx;  
+  background-color: #ffffff;  
+  border-radius: 20rpx;  
+}  
+  
+/* 进度条内部，表示已播放部分 */  
+.play-jindutiao-inner {  
+  height: 100%;  
+  background-color: #8a8a8a;  
+}
 
 /* 播放列表 */
 /* 播放列表 */
-.playlist{
+.playlist {
   display: flex;
-  width: 1005;
+  flex-direction: column;
+  width: 100%;
   height: 100vh;
   background-color: rgb(34, 34, 34);
 }
-.playlist-top{
+
+.playlist-top {
   display: flex;
+  align-items: center;
   margin-top: 13rpx;
   margin-left: 20rpx;
 }
-.playlist-top image{
+
+.playlist-top image {
   width: 120rpx;
   height: 120rpx;
   border-radius: 16rpx;
+  margin-right: 20rpx;
 }
-.playlist-a{
+
+.playlist-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.playlist-a {
   font-size: 40rpx;
   color: #ffffff;
-  margin-left: 20rpx;
+  margin-left: 18rpx;
 }
-.playlist-b{
+
+.playlist-b {
   font-size: 30rpx;
   color: #b6b6b6;
-  margin-left: 20rpx;
+  margin-top: 16rpx;
+  margin-left: 18rpx;
 }

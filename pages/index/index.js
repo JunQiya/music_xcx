@@ -6,7 +6,7 @@ Page({
   /**
    * 页面的初始数据
    */
-  data: {  
+  data: {
     currentTab: 0, // 当前选中的标签索引  
     swiperCurrent: 0, // swiper的当前索引  
     musicCover: 'https://xcx.lxxno.cn/image/music/44.jpg',  
@@ -68,7 +68,7 @@ Page({
   onReady:  function(){
     this.audioBam = wx.getBackgroundAudioManager()
     this.setMusic(0)  
-    // 默认选择曲库第一首
+    // 默认选择曲库第一首 
   },
   setMusic: function (index){
     // 设置当前播放的曲目
@@ -117,6 +117,5 @@ Page({
       swiperCurrent: item // 更新swiper的当前索引  
     });  
   },
-
 
 })

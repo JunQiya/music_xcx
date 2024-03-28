@@ -5,11 +5,15 @@
   <!-- <image src="{{ play.poster }}" /> -->
   <image src="https://imgessl.kugou.com/stdmusic/20201231/20201231105006379600.jpg" mode="" />
 
-</view>
-<!-- 音乐信息 -->
-<view>
-  <view>
-    <text> {{ play.name }} </text>
-    <view> {{ play.author }} </view>
+  <!-- 音乐信息 -->
+  <view class="play-a">
+    <view>
+      <text class="play-a1"> 天外来物 </text>
+      <view class="play-a2"> 薛之谦 </view>
+    </view>
+    <!-- 进度条 -->
+    <view class="play-jindutiao">
+      <view class="play-jindutiao-inner" style="width: {{progressWidth}}"></view>
+    </view>
   </view>
 </view>
